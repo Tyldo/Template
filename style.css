@@ -1,4 +1,70 @@
-audio {
-	display: block;
-	margin: auto;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 600px;
+  border: 1px solid red;
+  
+}
+.item1 {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 250px;
+}
+.item2 {
+  display: flex;
+  width: 100%;
+  height: 250px;
+  justify-content: space-around;
+}
+.player3 {
+  width: 40%;
+  background: url(https://img3.goodfon.ru/original/1024x768/0/d8/barcelona-emblema-team.jpg);
+  background-size: contain;
+  background-position: center center;
+  transition: background 0.5s linear;
+  
+}
+.player4 {
+  width: 40%;
+  background: url(https://img3.goodfon.ru/original/1024x768/0/d8/barcelona-emblema-team.jpg);
+  background-size: contain;
+  background-position: center center;
+  transition: background 0.5s linear;
+}
+.player1 {
+   width: 40%;
+  background: url(https://img3.goodfon.ru/original/1024x768/0/d8/barcelona-emblema-team.jpg);
+  background-size: contain;
+  background-position: center center;
+  transition: background 0.5s linear;
+}
+.player2 {
+   width: 40%;
+  background: url(https://img3.goodfon.ru/original/1024x768/0/d8/barcelona-emblema-team.jpg);
+  background-size: contain;
+  background-position: center center;
+  transition: background 0.5s linear;
+}
+.player1:hover {
+  background: url(http://dynamo.kiev.ua/media/posts/2017/01/12/7.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.player2:hover {
+  background: url(https://storage.tarafdari.com/contents/user7001/news/pique_manita.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.player3:hover {
+  background: url(http://on-desktop.com/wps/_The_player_of_Barcelona_Carles_Puyol_048673_.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.player4:hover {
+  background: url(http://www.varzesh11.com/images/gallery/andr%C3%A9s-iniesta-24841.jpg);
+  background-size: cover;
+  background-position: center center;
 }
