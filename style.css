@@ -1,70 +1,133 @@
+body {
+  background: linear-gradient(to top left, #ff38c3, powderblue);
+}
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  perspective: 800px;
   width: 100%;
   height: 600px;
-  border: 2px solid red;
+
   
 }
-.item1 {
-  display: flex;
-  justify-content: space-around;
+h2 {
+  text-align: center;
+  font-family: "Raleway";
+  font-size: 35px; 
+}
+.flipper1, .flipper2, .flipper3, .flipper4, .flipper5, .flipper6, .flipper7, .flipper8, .flipper9, .flipper10 {
+  position: absolute;
+  top: 70px;
+  left: 50px;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  transition: all .7s linear;
+}
+
+
+.face {
+  border-radius: 15px;
+  position: absolute;
   width: 100%;
-  height: 250px;
+  height: 100%;
+  background: url("http://www.profootball.ua/uploads/posts/1472737707_barsa.jpg");
+  background-position: center center;
+  background-size: cover;
+  backface-visibility: hidden;
 }
-.item2 {
-  display: flex;
+
+.back1, .back2, .back3, .back4, .back5, .back6, .back7, .back8, .back9, .back10 {
+  border-radius: 15px;
+  position: absolute;
   width: 100%;
-  height: 250px;
-  justify-content: space-around;
-}
-.player3 {
-  width: 40%;
-  background: url(https://img3.goodfon.ru/original/1024x768/0/d8/barcelona-emblema-team.jpg);
-  background-size: contain;
+  height: 100%;
+  background: green;
+  transform: rotateY(180deg);
+  background-image: url("https://static.businessinsider.com/image/57a34845db5ce925008b4ae8-400/image.jpg");
+  backface-visibility: hidden;
   background-position: center center;
-  transition: background 0.5s linear;
-  
-}
-.player4 {
-  width: 40%;
-  background: url(https://img3.goodfon.ru/original/1024x768/0/d8/barcelona-emblema-team.jpg);
-  background-size: contain;
-  background-position: center center;
-  transition: background 0.5s linear;
-}
-.player1 {
-   width: 40%;
-  background: url(https://img3.goodfon.ru/original/1024x768/0/d8/barcelona-emblema-team.jpg);
-  background-size: contain;
-  background-position: center center;
-  transition: background 0.5s linear;
-}
-.player2 {
-   width: 40%;
-  background: url(https://img3.goodfon.ru/original/1024x768/0/d8/barcelona-emblema-team.jpg);
-  background-size: contain;
-  background-position: center center;
-  transition: background 0.5s linear;
-}
-.player1:hover {
-  background: url(http://dynamo.kiev.ua/media/posts/2017/01/12/7.jpg);
   background-size: cover;
-  background-position: center center;
+
 }
-.player2:hover {
-  background: url(https://storage.tarafdari.com/contents/user7001/news/pique_manita.jpg);
-  background-size: cover;
-  background-position: center center;
+.flipper1:hover, .flipper2:hover, .flipper3:hover, .flipper4:hover, .flipper5:hover, 
+.flipper6:hover, .flipper7:hover, .flipper8:hover, .flipper9:hover, .flipper10:hover {
+  transform: rotateY(180deg);
 }
-.player3:hover {
-  background: url(http://on-desktop.com/wps/_The_player_of_Barcelona_Carles_Puyol_048673_.jpg);
-  background-size: cover;
-  background-position: center center;
+
+.flipper2 {
+  left: 300px;
 }
-.player4:hover {
-  background: url(http://www.varzesh11.com/images/gallery/andr%C3%A9s-iniesta-24841.jpg);
-  background-size: cover;
-  background-position: center center;
+
+
+.back2 {
+  background-image: url("https://imagecdn1.luxnet.ua/football24/resources/photos/news/600x315_DIR/201208/125011.jpg");
+}
+
+.flipper3 {
+  left: 550px;
+}
+
+.back3 {
+  background-image: url("http://football24online.com/img/2013/08/22/pique-gerard.jpg");
+
+}
+
+.flipper4 {
+  left: 800px;
+}
+
+.back4 {
+  background-image: url("https://404store.com/2017/12/23/DRqy8lvW4AAvo53.th.jpg");
+}
+
+.flipper5 {
+  left: 1050px;
+
+}
+
+.back5 {
+  background-image: url("http://www.barcelona.sportland24.ru/images/img_generate.php?width=200&fill=false&path=/upload/iblock/a89/a8950ca7454908d55f33497a12527620.jpg");
+}
+
+.flipper6 {
+  top: 350px;
+}
+
+.back6 {
+  background-image: url("http://files.laliga.es/jugadores/201709/250x250_04113926sergi-roberto-carnicer.jpg");
+}
+
+.flipper7 {
+  top: 350px;
+  left: 300px ;
+}
+
+.back7 {
+  background-image: url("https://images.supersport.com/2016/11/Denis%20Suarez-161109-Look-G300.jpg");
+}
+
+.flipper8 {
+  top: 350px;
+  left: 550px;
+}
+
+.back8 {
+  background-image: url("http://e0.365dm.com/17/04/150x150/skysports-luis-suarez-barcelona-la-liga-celebration_3925672.jpg");
+}
+
+.flipper9 {
+  top: 350px;
+  left: 800px;
+}
+
+.back9 {
+  background-image: url("http://starberita.com/wp-content/uploads/2017/10/Samuel-Umtiti-250x242.jpg");
+}
+
+.flipper10 {
+  top: 350px;
+  left: 1050px;
+}
+
+.back10 {
+  background-image: url("https://images.supersport.com/2017/9/Ivan%20Rakitic-170921-Look-G300.jpg");
 }
